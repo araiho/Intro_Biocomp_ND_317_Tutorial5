@@ -5,10 +5,11 @@ wages = read.csv(file="wages.csv", header=TRUE, stringsAsFactors = FALSE)
 
 #Challenge question 1
 test1 <- unique(wages[,c("gender","yearsExperience")])
+test2 <- test1[order(test1[,1], test1[,2]),]
 write.csv(test2,"gender_years_in_order.csv")
 
 #Challenge question 2
-test2 <- test1[order(test1[,1], test1[,2]),]
+
 
 #Challenge question 3
 
