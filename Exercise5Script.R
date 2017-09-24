@@ -52,3 +52,9 @@ sum(TopTenEarners =="female")
 
 
 #Challenge Question 3
+wages3 = wages[, -c(1:2)]
+wage.12.years.school = mean(wages3$wage[wages3$yearsSchool==12])
+wage.16.years.school = mean(wages3$wage[wages3$yearsSchool==16])
+
+###Question 3 Answer
+Effect.of.graduating.college = wage.16.years.school-wage.12.years.school
