@@ -1,7 +1,7 @@
 #Exercise5_Question1
 
 # Set working directory
-setwd("~/Desktop/data-shell/Exercise5/Intro_Biocomp_ND_317_Tutorial5/")
+setwd("~/Desktop/data-shell/Exercise5/Intro_Biocomp_ND_317_Tutorial5/Intro_Biocomp_ND_317_Tutorial5/")
 x = read.csv(file = "wages.csv")
 
 #Alternatively sort by gender and then years experience in one function:
