@@ -13,7 +13,7 @@ write.table(unique(ordered_list), "Exercise5_Challenge1.txt", quote = FALSE, row
 #Exercise5_Question2
 
 #Sort by wages
-sort_earns = wages[order(wages$wage), c(1,2,4)]
+sort_earns = x[order(x$wage), c(1,2,4)]
 
 #Sort by highest and lowest wage
 highest_earner = tail(sort_earns, n=1)
