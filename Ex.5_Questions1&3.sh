@@ -10,8 +10,14 @@ ordered_list <- x[order(x$gender, x$yearsExperience), c(1,2)]
 #Write unique gender-yearsExperience combinations to a text file called "Exercise5_Challenge1.txt"
 write.table(unique(ordered_list), "Exercise5_Challenge1.txt", quote = FALSE, row.names = FALSE)
 
+#Exercise5_Question2
 
+#Sort by wages
+sort_earns = wages[order(wages$wage), c(1,2,4)]
 
+##Sort by highest and lowest wage
+highest_earner = tail(sort_earns, n=1)
+lowest_earner = head(sort_earns, n=1)
 
 #Exercise5_Question3
 
