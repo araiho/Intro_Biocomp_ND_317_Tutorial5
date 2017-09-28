@@ -15,9 +15,14 @@ write.table(unique(ordered_list), "Exercise5_Challenge1.txt", quote = FALSE, row
 #Sort by wages
 sort_earns = wages[order(wages$wage), c(1,2,4)]
 
-##Sort by highest and lowest wage
+#Sort by highest and lowest wage
 highest_earner = tail(sort_earns, n=1)
 lowest_earner = head(sort_earns, n=1)
+
+#Number of females in top 10
+top10 = tail(sort_earns, n=10)
+topF=factor(top10$gender=="female")
+table(topF)["TRUE"]
 
 #Exercise5_Question3
 
