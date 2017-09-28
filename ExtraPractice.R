@@ -9,6 +9,7 @@ for (i in 1:nrow(wages)){
   else if (wages[i,1] == "male"){
     mwage = mwage + wages[i,]$wage
   }
+<<<<<<< HEAD
 }
 
 #DNA Script
@@ -65,3 +66,6 @@ close(readFile)
 
 #Putting everything into a table called DNA.dat
 DNA.dat <- data.frame(sequenceID, sequenceLENGTH, percentCG, meltTEMP)
+=======
+}
+>>>>>>> 2a45a565f982abf8216f12c364dafc420e9f4307
