@@ -23,10 +23,32 @@ for (i in 1:10){
   }
 }
 print("The person with the lowest wage is")
-min.wage
+min.wage[,c(1,2,4)]
 print("The person with the highest wage is")
-max.wage
+max.wage[,c(1,2,4)]
 
 print("The number of females in the top 10 earners is")
 counter
 
+#Part 3
+highSchoolWages <- NULL
+collegeWages <- NULL
+
+j = 1
+k = 1
+for (i in 1:nrow(wages)){
+  if (wages[i,3] == "12"){
+    highSchoolWages[j] = wages [i,4]
+    j = j+1
+  }else if (wages[i,3] == "16"){
+    collegeWages[k] = wages[i,4]
+    k = k+1
+  }
+}
+
+print("The minimum wage of a high school graduate is:")
+min(highSchoolWages)
+print("The minimum wage of a college graduate is:")
+min(collegeWages)
+print("The difference in these wages is")
+min(collegeWages) - min(highSchoolWages)
