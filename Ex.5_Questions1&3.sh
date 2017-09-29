@@ -17,12 +17,16 @@ sort_earns = x[order(x$wage), c(1,2,4)]
 
 #Sort by highest and lowest wage
 highest_earner = tail(sort_earns, n=1)
+print(paste0("Highest Earner: ", highest_earner))
+
 lowest_earner = head(sort_earns, n=1)
+print(paste0("Lowest Earner: ', lowest_earner))
 
 #Number of females in top 10
 top10 = tail(sort_earns, n=10)
 topF=factor(top10$gender=="female")
-table(topF)["TRUE"]
+topFnumber=table(topF)["TRUE"]
+print(paste0("Number of females in top wages: ", topFnumber))
 
 #Exercise5_Question3
 
